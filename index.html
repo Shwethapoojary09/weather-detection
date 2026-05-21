@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Detection</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero-panel">
+      <div class="hero-copy">
+        <span class="eyebrow">Weather Detection</span>
+        <h1>Instant weather insights with a graphical dashboard</h1>
+        <p>Detect current weather using your location or search for any city. Beautiful visuals make the forecast easy to read at a glance.</p>
+      </div>
+      <div class="hero-illustration" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="raindrop drop-1"></div>
+        <div class="raindrop drop-2"></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="search-panel">
+        <div class="search-input-group">
+          <label for="city-input">Search city</label>
+          <input id="city-input" type="text" placeholder="e.g. New York" />
+          <button id="search-button">Detect Weather</button>
+        </div>
+        <button id="geo-button" class="geo-button">Use My Location</button>
+      </section>
+
+      <section class="status-panel" id="status-panel">
+        <p class="status-message">Enter a city name or use your location to begin.</p>
+      </section>
+
+      <section class="weather-grid" id="weather-grid" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
