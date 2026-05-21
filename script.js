@@ -260,3 +260,15 @@ function renderTempChart(hourly) {
     console.error('Chart render error', e);
   }
 }
+
+function stormIcon() {
+  return `<svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 8c-9 0-16 7-16 16 0 2 .4 4 1 5.8C11.8 31 8 35.6 8 41c0 6.6 5.4 12 12 12h24c6.6 0 12-5.4 12-12 0-5.4-3.6-10-8.6-11.4.4-1.4.6-2.8.6-4.6 0-9-7-17-16-17zm-4 30l-6 12h8l-4 10 14-16h-9l5-6h-8z" fill="currentColor"/></svg>`;
+}
+
+function snowIcon() {
+  return `<svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 8v48M20 14l24 36M44 14L20 50M8 32h48M14 20l36 24M14 44l36-24" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>`;
+}
+
+function thunderIcon() {
+  return `<svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 8c-9 0-16 7-16 16 0 2 .4 4 1 5.8C11.8 31 8 35.6 8 41c0 6.6 5.4 12 12 12h24c6.6 0 12-5.4 12-12 0-5.4-3.6-10-8.6-11.4.4-1.4.6-2.8.6-4.6 0-9-7-17-16-17zm0 18l-8 16h8l-6 14 18-20h-10l6-10h-8z" fill="currentColor"/></svg>`;
+}
